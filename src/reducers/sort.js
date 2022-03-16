@@ -9,8 +9,8 @@ var myReducer=(state=initialState,action)=>{
     if(action.type===types.SORT){
         var {by,value}=action.sort;
         return    {
-                by,
-                value   
+                by:by,
+                value: value   
         }
     }
     return state;
